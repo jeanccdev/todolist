@@ -17,11 +17,11 @@
       "SERVER_PORT": "5000"
     },
     "functions": {
-      "server": {
-        "runtime": "vercel-node@3.x",
-        "memory": 128,
-        "maxDuration": 10
-      }
+        "api/**/*.js": {
+          "runtime": "vercel-node@14",
+          "memory": 128,
+          "maxDuration": 10
+        }
     }
-  }
+}
   
