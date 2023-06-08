@@ -15,13 +15,6 @@
     ],
     "env": {
       "SERVER_PORT": "5000"
-    },
-    "functions": {
-        "api/**/*.js": {
-          "runtime": "vercel-node@14",
-          "memory": 128,
-          "maxDuration": 10
-        }
     }
 }
   
