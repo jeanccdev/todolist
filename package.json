@@ -17,11 +17,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start\" \"json-server --watch data/db.json --port 5000\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "json-server --watch data/db.json --port 5000"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.1.0"
   }
 }
