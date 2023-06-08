@@ -1,7 +1,6 @@
 {
     "version": 2,
     "builds": [
-      { "src": "package.json", "use": "@vercel/static-build" },
       { "src": "data/db.json", "use": "@vercel/static" }
     ],
     "routes": [
@@ -17,9 +16,6 @@
     "env": {
       "SERVER_PORT": "5000"
     },
-    "builds": [
-      { "src": "package.json", "use": "vercel-build" }
-    ],
     "functions": {
       "server": {
         "runtime": "vercel-node@3.x",
